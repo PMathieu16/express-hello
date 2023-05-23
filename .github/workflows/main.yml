@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 20.x
       - run: npm ci
-      - run: npm run build
+      - run: npm i
       - name: Deploy to SSH Server
         uses: easingthemes/ssh-deploy@main
         env:
